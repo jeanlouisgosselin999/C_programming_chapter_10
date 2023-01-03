@@ -1,0 +1,73 @@
+page 326: Exercise 10.44:
+
+a) int *px; ==> a pointer of name "px" which points to the address of a variable that is of type INT
+
+b) float a, b;
+   float *pa, *pb; ==> 2 pointers of name "pa" and "pb" that presumably point to the addresses of variables "a" and "b" that are of type DOUBLE
+
+c) float a = -0.167;
+   float *pa = &a; ==> declaration and initialization of a pointer of name "pa" that points to the address of a variable that is of type FLOAT;
+			here: pointer is assigned the address of variable "a"
+
+d) ...
+
+e) double func (double *a, double *b, double *c);
+	|
+	==> definition of a function "func" that accepts as its arguments 3 pointers that point to addresses of variables that are of type DOUBLE;
+		this function returns a value of type DOUBLE
+
+
+f) double *func (double *a, double *b, double *c);
+	|
+	==> definition of a function "func" that accepts as its arguments 3 pointers that point to addresses of variables that are of type;
+		this function returns a pointer which points to the address of a variable that is of type DOUBLE
+
+
+g) double (*a)[12];
+	|
+	==> "a" is a pointer to a 12-element array of type DOUBLE (===> same as: double a[12])
+
+
+h) double *a[12];
+	|
+	==> "a" is a 12-element array of pointers that point to addresses of variables that are of type DOUBLE
+
+
+i) ...
+
+j) char *d[4] = {"north", "south", "east", "west"};
+	|
+	==> "d" is a 4-element array of pointers that point to addresses of variables that are of type CHAR;
+		assigning values "north", "south", "east" and "west" to all 4 elements/pointers.
+
+
+k) long (*p)[10][12];
+	|
+	==> "p" is a pointer to a 2-dimensional array of type DOUBLE, with 10 rows and 12 columns per row 
+	(===> same as writing: long p[10][12])
+
+
+l) long *p[10][12];
+	|
+	==> "p" is a 2-dimensional array (10 rows and 12 columns per row) of pointers that point to addresses of variables that are of type DOUBLE
+
+
+m) char sample(int (*p)(char a, char b));
+	|
+	==> "sample" is a HOST function that returns a CHAR quantity; its argument is a pointer to a GUEST function (which itself has
+		2 arguments of type CHAR) that returns an INT quantity.
+
+
+n) int (*pf)(void);
+	|
+	==> "pf" is a pointer to a function which has no arguments (void); "pf" returns a value of type INT
+
+
+o) int (*pf)(char a, char b);
+	|
+	==> "pf" is a pointer to a function that accepts 2 arguments of type CHAR; 
+
+
+p) int (*pf)(char *a, char *b);
+	|
+	==> "pf" is a pointer to a function that accepts 2 arguments that are themselves 2 pointers of type CHAR; 

@@ -1,0 +1,75 @@
+a)
+float (*x)(int *a);
+
+==> x is a pointer to a function that accepts an argument which is a pointer to an integer; 
+returns a floating-point value
+
+
+b) 
+float (*x(int *a))[20];
+
+==> x is a function that accepts an argument which is a pointer; 
+returns a pointer to a 20-element floating-point array
+
+
+c)
+float x(int (*a)[]);
+
+==> x is a function that accepts an argument which is a pointer to an array of integers; 
+x returns a floating-point value
+
+
+d)
+float x(int *a[]);
+
+==> x is a function that accepts an argument which is an array of pointers to integer-type values; 
+x returns a floating-point value
+
+
+e)
+float* x(int a[]);
+
+==> x is a function that accepts an argument which is an array of integers; 
+x returns a pointer to a floating-point value
+
+
+f)
+float* x(int (*a)[]);
+
+==> x is a function that accepts an argument which is a pointer to an integer-type array; 
+x returns a pointer to a floating-point value 
+
+
+g)
+float* x(int *a[]);
+
+==> x is a function that accepts an argument which is an array of pointers to integer-type values; 
+x returns a pointer to a floating-point value
+
+
+h)
+float (*x)(int (*a)[]);
+
+==> x is a pointer to a function that accepts an argument which is a pointer to an array of integer-type values; 
+this function returns a floating-point value
+
+
+i)
+float* (*x)(int *a[]);
+
+==> x is a pointer to a function that accepts an argument which is an array of pointers to integer-type values; 
+this function returns a pointer to a floating-point value
+
+
+j)
+float (*x[20])(int a);
+
+==> x is an array of pointers to a function that accepts an argument which is an integer; 
+this function returns a floating-point value
+
+
+k)
+float* (*x[20])(int *a);
+
+==> x is a 20-element array of pointers to functions; each function accepts an argument which is a pointer to integer-type values; 
+each of these functions return a pointer to floating-point values.

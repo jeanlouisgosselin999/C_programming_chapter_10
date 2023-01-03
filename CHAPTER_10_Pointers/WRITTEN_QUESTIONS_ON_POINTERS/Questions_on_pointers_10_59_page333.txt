@@ -1,0 +1,74 @@
+a)
+declaring a function that accepts an argument which is a pointer to an integer quantity and returns a pointer to a 6-element CHAR array:
+
+char (*x(int *a)[6]);
+
+
+b)
+declaring a function that accepts an argument which is a pointer to an integer array and returns a CHAR:
+
+char x(int (*a)[]);
+
+
+c)
+declaring a funcion that accepts an argument which is an array of pointers to integer quantities and returns a CHAR:
+
+char x(int *a[]);
+
+
+d)
+declaring a function that accepts an argument which is an integer array and returns a pointer to a CHAR:
+
+char* x(int a[]);
+
+
+e)
+declaring a function that accepts an argument which is a pointer to an integer array and returns a pointer to a CHAR:
+
+char* x(int (*a)[]);
+
+
+f)
+declaring a function that accepts an argument which is an array of pointers to integer quantities and returns a pointer to a CHAR:
+
+char* x(int *a[]);
+
+
+g)
+declaring a pointer to a function that accepts an argument which is a pointer to an integer array and returns a CHAR:
+
+char (*x)(int (*a)[]);
+
+
+h) 
+declaring a pointer to a function that accepts an argument which is a pointer to an integer array and returns a pointer to a CHAR:
+
+char* (*x)(int (*a)[]);
+
+
+i)
+declaring a pointer to a function that accepts an argument which is an array of pointers to integer quantities and returns a pointer to a CHAR:
+
+char* (*x)(int *a[]);
+
+
+j)
+declaring a 12-element array of pointers to functions; 
+each function accepts 2 double-precision quantities as arguments and returns a double-precision quantity:
+
+double (*x[20])(double a, double b);
+
+
+k)
+declaring a 12-element array of pointers to functions; 
+each function accepts 2 double-precision quantities as arguments and returns a pointer to a double-precision quantity: 
+
+double* (*x[20])(double a, double b);
+
+
+l)
+k)
+declaring a 12-element array of pointers to functions; 
+each function accepts 2 pointers to double-precision quantities as arguments and returns a pointer to a double-precision quantity:
+
+double* (*x[20])(double *a, double *b);
